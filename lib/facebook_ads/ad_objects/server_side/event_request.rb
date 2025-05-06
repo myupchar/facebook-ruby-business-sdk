@@ -175,7 +175,6 @@ module FacebookAds
       def normalize
         normalized_events = []
         events.each do |event|
-          puts "normalize ---> event -> #{event}"
           normalized_events.push(JSON.generate(event.normalize))
         end
         normalized_events
